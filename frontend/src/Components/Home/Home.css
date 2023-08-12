@@ -1,0 +1,69 @@
+
+
+
+.HomePage-Parent{
+  
+    padding-top: 5vh;
+     background-color: #101820FF;
+ }
+
+.slide{
+  height: 500px;
+  background-color: #101820FF;
+}
+ 
+ .HomePage-Heading{
+     font-size: 1.5rem;
+     font-family: 'Sansita Swashed', cursive;
+     letter-spacing: 0.1em;
+     font-weight: bold;
+     color: #f2f1ed;
+     padding: auto;
+     width: 70vw;
+     margin: auto;
+     padding-top:5vh ;
+     padding-bottom:5vh ;
+ }
+ 
+ .HomePage-layer1 .HomePage-layer1-Text{
+     overflow: hidden; /* Ensures the content is not revealed until the animation */
+     border-right: .15em solid orange; /* The typwriter cursor */
+     white-space: nowrap; /* Keeps the content on a single line */
+     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+     letter-spacing: .05em; /* Adjust as needed */
+     margin: auto;
+     width: 30vw;
+     padding-bottom: 2vh;
+     font-size: 4rem;
+    font-family: Bodoni MT;
+     color: #FAD0C9FF;
+     transition: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+     animation: 
+       typing 3.5s steps(12, end),
+       blink-caret .5s step-end infinite;
+   }
+       
+   @keyframes typing {
+     from { width: 0 }
+     to { width: 36% }
+   }
+ 
+   @keyframes blink-caret {
+     from, to { border-color: transparent }
+     50% { border-color: #FAD0C9FF; }
+   }
+   .HomePage-layer1-Text-Heading{
+       color: aqua;
+       white-space: nowrap;
+   }
+   @media (max-width:480px) {
+     .HomePage-layer1 .HomePage-layer1-Text{
+       font-size: 3rem;
+       width: 90vw;
+     }
+           
+     @keyframes typing {
+       from { width: 0 }
+       to { width: 50% }
+     }
+   }
